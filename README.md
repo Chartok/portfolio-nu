@@ -20,7 +20,7 @@
 
 ## Usage
 
-  Click the link to view the portfolio.
+  Click [this link](https://chartok.github.io/portfolio-nu/) to view the portfolio.
 
 ## Contributing
 
