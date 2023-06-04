@@ -19,13 +19,18 @@
 }
 
 html {
-    font-size: large;
+    font-size: 62.5%;
     overflow-x: hidden;
 }
 
 body {
     background: var(--bg-color);
     color: var(--text-color);
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
 }
 
 .header {
@@ -41,3 +46,45 @@ body {
     z-index: 100;
 }
 
+.logo{
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 4rem;
+    cursor: default;
+}
+
+.navbar a {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a:active {
+    color: var(--main-color);
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+
+.home-content h2 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
