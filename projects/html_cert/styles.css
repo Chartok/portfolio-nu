@@ -1,6 +1,6 @@
 body {
     background-color: rgba(0, 30, 67, 0.563);
-    background-image: url(city_skyilne.jpg); background-repeat: no-repeat;
+    background-image: url(~/Documents/portAwesome/Preview/images/city_skyilne.jpg); background-repeat: no-repeat;
     background-attachment: fixed;
     background-blend-mode: multiply;
     background-size: cover;
@@ -13,7 +13,7 @@ body {
     font-size: larger;
     font-family: 'Times New Roman', Times, serif;
 
-    
+
 }
 
 header {
