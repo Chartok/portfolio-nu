@@ -2,8 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
     transition: var(--transition-standard);
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -21,11 +21,13 @@ body {
     color: var(--text-color);
 }
 
-header, nav, section {
+header,
+nav,
+section {
     padding: var(--padding-standard);
 }
 
-.header {
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -38,19 +40,19 @@ header, nav, section {
     z-index: 100;
 }
 
-.header.sticky {
-    border-bottom: .1rem solid rgba(0, 0, 0, .2);
+header.sticky {
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
 }
 
 .logo {
-    font-size: 2.5rem;
+    font-size: 29px;
     color: var(--text-color);
-    font-weight: 4rem;
+    font-weight: 700;
     cursor: default;
 }
 
 .navbar a {
-    font-size: 18px;
+    font-size: 28px;
     color: var(--text-color);
     margin-left: 4rem;
     transition: 0.3s;
@@ -62,7 +64,7 @@ header, nav, section {
 }
 
 #menu-icon {
-    font-size: 3.6rem;
+    font-size: 18px;
     color: var(--text-color);
     display: none;
 }
@@ -77,27 +79,20 @@ header, nav, section {
     width: 35vw;
 }
 
-.home-content h3 {
-    font-size: 3.2rem;
-    font-weight: 700;
-}
-
-.home-content h3:nth-of-type(2) {
-    margin-bottom: 2rem;
-}
-
 span {
     color: var(--main-color);
 }
 
 .home-content h1 {
-    font-size: 5.6rem;
+    font-size: 48px;
     font-weight: 700;
     line-height: 1.3;
 }
 
 .home-content p {
-    font-size: 1.6rem;
+    font-size: 24px;
+    margin: 2rem 0;
+    padding: auto;
 }
 
 .social a {
@@ -107,12 +102,12 @@ span {
     width: 4rem;
     height: 4rem;
     background: transparent;
-    border: .2rem, solid var(--main-color);
+    border: 0.2rem solid var(--main-color);
     border-radius: 50%;
-    font-size: 2rem;
+    font-size: 26px;
     color: var(--main-color);
     margin: 3rem 1.5rem 3rem 0;
-    transition: .5s ease;
+    transition: 0.5s ease;
 }
 
 .social a:hover {
@@ -127,11 +122,11 @@ span {
     background: var(--main-color);
     border-radius: 4rem;
     box-shadow: 0 0 1rem var(--main-color);
-    font-size: 1.6rem;
+    font-size: 14px;
     color: var(--second-bg-color);
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
     font-weight: 600;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .btn:hover {
@@ -152,7 +147,7 @@ span {
 
 .heading {
     text-align: center;
-    font-size: 4.5rem;
+    font-size: 28px;
 }
 
 .about-content h2 {
@@ -161,30 +156,35 @@ span {
 }
 
 .about-content h3 {
-    font-size: 2.6rem;
+    font-size: 26px;
 }
 
 .about-content p {
-    font-size: 1.6rem;
+    font-size: 14px;
     margin: 2rem 0 3rem;
 }
 
-.portfolio {
+.container-fluid {
     background: var(--second-bg-color);
 }
 
-.portfolio h2 {
+.container-fluid h2 {
     margin-bottom: 4rem;
 }
 
-.portfolio-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    gap: 2.5rem;
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1.5rem;
 }
 
-.portfolio-container .portfolio-box {
+.col-lg-4,
+.col-md-6,
+.col-sm-12 {
+    padding: 0 1.5rem;
+}
+
+.card {
     position: relative;
     border-radius: 2rem;
     box-shadow: 0 0 1rem var(--bg-color);
@@ -192,46 +192,29 @@ span {
     display: flex;
 }
 
-.portfolio-box img {
+.card-img-top {
     width: 100%;
-    transition: .5s ease;
+    transition: 0.5s ease;
 }
 
-.portfolio-box:hover img {
+.card:hover .card-img-top {
     transform: scale(1.1);
 }
 
-.portfolio-box .portfolio-layer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 0 4rem;
-    transform: translateY(100%);
-    transition: .5s ease;
+.card-body {
+    padding: 2rem;
 }
 
-.portfolio-box:hover .portfolio-layer {
-    transform: translateY(0);
-}
-
-.portfolio-layer h4 {
+.card-title {
     font-size: 3rem;
 }
 
-.portfolio-layer p {
+.card-text {
     font-size: 1.6rem;
-    margin: .3rem 0 1rem;
+    margin: 0.3rem 0 1rem;
 }
 
-.portfolio-layer a {
+.card-body a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -241,8 +224,8 @@ span {
     border-radius: 50%;
 }
 
-.portfolio-layer a i {
-    font-size: 2rem;
+.card-body a i {
+    font-size: 16px;
     color: var(--second-bg-color);
 }
 
@@ -257,25 +240,20 @@ span {
     margin-bottom: 3rem;
 }
 
-.contact form .input-box {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.contact form .form-group {
+    margin-bottom: 1rem;
 }
 
-.contact form .input-box input,
+.contact form input[type="text"],
+.contact form input[type="email"],
 .contact form textarea {
     width: 100%;
     padding: 1.5rem;
-    font-size: 1.6rem;
+    font-size: 14px;
     color: var(--text-color);
     background: var(--second-bg-color);
-    border-radius: .8rem;
-    margin: .7rem 0;
-}
-
-.contact form .input-box input {
-    width: 49%;
+    border-radius: 0.8rem;
+    margin: 0.7rem 0;
 }
 
 .contact form textarea {
@@ -294,7 +272,7 @@ span {
 }
 
 @media (max-width: 991px) {
-    .header {
+    header {
         padding: 2rem 3%;
     }
 
@@ -304,24 +282,27 @@ span {
 }
 
 @media (max-width: 768px) {
-    header, nav, section{
+
+    header,
+    nav,
+    section {
         padding: var(--padding-standard);
     }
 
-    .navbar {
+    nav.navbar {
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
         padding: 1rem 3%;
         background: var(--bg-color);
-        border-top: .1rem solid rgba(0, 0, 0, .2);
-        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     }
 
-    .navbar a {
+    nav.navbar a {
         display: block;
-        font-size: 2rem;
+        font-size: 16px;
         margin: 3rem 0;
     }
 }
