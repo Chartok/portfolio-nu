@@ -1,12 +1,11 @@
 // Menu Icon Toggle
-let menuIcon = document.querySelector('#menu-icon')
-let navbar = document.querySelector('.navbar')
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
 
-menuIcon.onClick = () => {
-    menuIcon.classList.toggle('bx-x')
-    navbar.classList.toggle('active')
-}
-
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+};
 
 // Scroll Section
 let sections = document.querySelectorAll('section');
@@ -27,7 +26,7 @@ window.onscroll = () => {
         };
     });
 
-// Sticky Header
+    // Sticky Header
     let header = document.querySelector('header');
 
     header.classList.toggle('sticky', window.scrollY > 100);

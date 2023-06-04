@@ -5,41 +5,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
     <link rel="stylesheet" href="styles.css">
     <title>Project Portfolio</title>
 </head>
 
-<body>
+<body class="bg-dark text-white">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a href="#" class="navbar-brand">Portfolio</a>
 
-    <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <a class="navbar-brand" href="#">Portfolio</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <div class="navbar-nav ml-auto">
-                    <a class="nav-item nav-link active" href="#home">Home</a>
-                    <a class="nav-item nav-link" href="#about">About</a>
-                    <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
-                    <a class="nav-item nav-link" href="#contact">Contact</a>
-                </div>
-            </div>
-        </nav>
-    </header>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <!-- Home section -->
 
-    <section class="container-fluid d-flex justify-content-center align-items-center" id="home">
+    <section class="home" id="home">
         <div class="home-content">
             <h3>Hello, my name is</h3>
             <h1>Mohammed Bhimjee</h1>
             <h3>And I'm a <span>Fullstack Developer</span></h3>
             <p>My unique perspective allows me to unlock your full potential.</p>
             <div class="social">
-                <a href="#https://www.linkedin.com/in/mohammed-bhimjee/"><i class="bx bxl-linkedin"></i></a>
+                <a href="#"><i class="bx bxl-linkedin"></i></a>
             </div>
             <a href="https://docs.google.com/document/d/1EpnJK-pETelC5HLPk_zqbBhiI6fM-cwcj4eyjQ2TnUg/edit?usp=sharing"
                 class="btn">CV</a>
@@ -52,7 +52,7 @@
 
     <!-- About me -->
 
-    <section class="container-fluid bg-secondary d-flex justify-content-center align-items-center" id="about">
+    <section class="about" id="about">
         <div class="about-img">
             <img src="images/selfie.png" alt="photo of mohammed bhimjee">
         </div>
@@ -64,94 +64,70 @@
         </div>
     </section>
     <!-- Portfolio -->
-
     <section class="container-fluid bg-secondary" id="portfolio">
-        <h2 class="heading">Latest <span>Projects</span></h2>
+        <h2 class="heading text-center">Latest <span>Projects</span></h2>
 
-        <div class="portfolio-container">
-            <div class="portfolio-box">
-                <img src="images/prjct2.png" alt="image of project 1">
-                <div class="portfolio-layer">
-                    <h4>GamerLi</h4>
-                    <p>A simple library dashboard to managae games.</p>
-                    <a href="https://gamerli.herokuapp.com/"><i class="bx bx-link-external"></i></a>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="images/prjct2.png" class="card-img-top" alt="image of project 1">
+                    <div class="card-body">
+                        <h4 class="card-title">GamerLi</h4>
+                        <p class="card-text">A simple library dashboard to manage games.</p>
+                        <a href="https://gamerli.herokuapp.com/" class="btn btn-primary"><i
+                                class="bx bx-link-external"></i></a>
+                    </div>
                 </div>
             </div>
-            <div class="portfolio-box">
-                <img src="images/city_skyilne.jpg" alt="image of project 2">
-                <div class="portfolio-layer">
-                    <h4>Survey</h4>
-                    <p>My very first prior to joining bootcamp.Highlights what I learned about HTML and CSS.</p>
-                    <a href="https://chartok.github.io/code-survey/"><i class="bx bx-link-external"></i></a>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="images/city_skyilne.jpg" class="card-img-top" alt="image of project 2">
+                    <div class="card-body">
+                        <h4 class="card-title">Survey</h4>
+                        <p class="card-text">This project was one of the very first I did before joining bootcamp on
+                            freeCodeCamp. Highlighting what I learned about HTML and CSS.</p>
+                        <a href="https://chartok.github.io/code-survey/" class="btn btn-primary"><i
+                                class="bx bx-link-external"></i></a>
+                    </div>
                 </div>
             </div>
-            <div class="portfolio-box">
-                <img src="images/jott-preview.jpg" alt="image of project 3">
-                <div class="portfolio-layer">
-                    <h4>JottItNow</h4>
-                    <p>A note taking app deployed on heroku.</p>
-                    <a href="https://jottitnow.herokuapp.com/"><i class="bx bx-link-external"></i></a>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="images/jott-preview.jpg" class="card-img-top" alt="image of project 3">
+                    <div class="card-body">
+                        <h4 class="card-title">JottItNow</h4>
+                        <p class="card-text">A note taking app deployed on heroku.</p>
+                        <a href="https://jottitnow.herokuapp.com/" class="btn btn-primary"><i
+                                class="bx bx-link-external"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+
+
     <!-- Contact me -->
 
-<!-- Home section -->
-
-<section class="container-fluid d-flex justify-content-center align-items-center" id="home">
-    <div class="home-content">
-        <h3>Hello, my name is</h3>
-        <h1>Mohammed Bhimjee</h1>
-        <h3>And I'm a <span>Fullstack Developer</span></h3>
-        <p>My unique perspective allows me to unlock your full potential.</p>
-        <div class="social">
-            <a href="https://www.linkedin.com/in/mohammed-bhimjee/"><i class="bx bxl-linkedin"></i></a>
-        </div>
-        <a href="https://docs.google.com/document/d/1EpnJK-pETelC5HLPk_zqbBhiI6fM-cwcj4eyjQ2TnUg/edit?usp=sharing" class="btn">CV</a>
-    </div>
-
-    <div class="home-img">
-        <img src="images/selfie.png" alt="photo of mohammed bhimjee">
-    </div>
-</section>
-
-<!-- About me -->
-
-<section class="container-fluid bg-secondary d-flex justify-content-center align-items-center" id="about">
-    <div class="about-img">
-        <img src="images/selfie.png" alt="photo of mohammed bhimjee">
-    </div>
-
-    <div class="about-content">
-        <h2 class="heading">About<span>Me</span></h2>
-        <h3>Fullstack Developer</h3>
-        <p>With a foundation of a variety of experiences, the possibilities of what I can achieve is endless...</p>
-    </div>
-</section>
-            <!-- Portfolio -->
-
-<section class="container-fluid bg-secondary" id="portfolio">
-    <h2 class="heading">Latest <span>Projects</span></h2>
-
-    <div class="portfolio-container">
-        <div class="portfolio-box">
-            <img src="images/prjct2.png" alt="image of project 1">
-            <div class="portfolio-layer">
-                <h4>GamerLi</h4>
-                <p>A simple library dashboard to managae games.</p>
-                <a href="https://gamerli.herokuapp.com/"><i class="bx bx-link-external"></i></a>
+    <section class="contact" id="contact">
+        <h2 class="heading text-center">Contact <span>Me!</span></h2>
+        <form action="#">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="First and Last Name">
             </div>
-            <textarea rows="10" cols="30" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="Email Address">
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" rows="3" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
         </form>
     </section>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
-
 </html>
-
-<!-- inspired by codehal: https://www.youtube.com/watch?v=Tkp3FDgOueM&t=2298  -->
