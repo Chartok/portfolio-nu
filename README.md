@@ -1,47 +1,48 @@
 
-  # Portfolio
+# Portfolio
 
-  ## Description
+## Description
 
   Portfolio describing my work
 
-  ## Table of Contents
+## Table of Contents
 
-  * [Installation](#installation)
-  * [Usage](#usage)
-  * [Contributing](#contributing)
-  * [Tests](#tests)
-  * [License](#license)
-  * [Questions](#questions)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [License](#license)
+* [Questions](#questions)
 
-  ## Installation
+## Installation
 
   N/A
 
-  ## Usage
+## Usage
 
   Click the link to view the portfolio.
 
-  ## Contributing
+## Contributing
 
   N/A
 
-  ## Tests
+## Tests
 
   N/A
 
-  ## License
+## License
 
   ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
   MIT License
-  https://opensource.org/licenses/MIT
+  <https://opensource.org/licenses/MIT>
 
-  ## Questions
+## Questions
 
-  If you have any questions, please contact me at m.bhimjee@outlook.com.
+  If you have any questions, please contact me at <m.bhimjee@outlook.com>.
   You can also find me on GitHub at Chartok.
 
-  ## Credits
+## Credits
 
   Mohammed 'Asad' Bhimjee
-  
+
+ ![Portfolio](images/portfolioPreview.png)
