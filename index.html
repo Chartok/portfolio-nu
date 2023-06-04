@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
     <link rel="stylesheet" href="styles.css">
     <title>Project Portfolio</title>
@@ -13,19 +14,25 @@
 <body>
 
 <header class="header">
-    <a href="#" class="logo">Portfolio</a>
-
-    <i class="bx bx-menu" id="menu-icon"></i>
-
-    <a href="#home" class="active">Home</a>
-    <a href="#about">About</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#contact">Contact</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link active" href="#home">Home</a>
+                <a class="nav-item nav-link" href="#about">About</a>
+                <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
+                <a class="nav-item nav-link" href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
 </header>
 
 <!-- Home section -->
 
-<section class="home" id="home">
+<section class="container-fluid d-flex justify-content-center align-items-center" id="home">
     <div class="home-content">
         <h3>Hello, my name is</h3>
         <h1>Mohammed Bhimjee</h1>
@@ -44,7 +51,7 @@
 
 <!-- About me -->
 
-<section class="about" id="about">
+<section class="container-fluid bg-secondary d-flex justify-content-center align-items-center" id="about">
     <div class="about-img">
         <img src="images/selfie.png" alt="photo of mohammed bhimjee">
     </div>
@@ -57,7 +64,7 @@
 </section>
             <!-- Portfolio -->
 
-<section class="portfolio" id="portfolio">
+<section class="container-fluid bg-secondary" id="portfolio">
     <h2 class="heading">Latest <span>Projects</span></h2>
 
     <div class="portfolio-container">
@@ -101,8 +108,10 @@
     </form>
 </section>
 
-    <script src="js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
+
 
 </html>
 
