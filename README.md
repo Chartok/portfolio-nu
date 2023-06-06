@@ -45,4 +45,4 @@
 
   Mohammed 'Asad' Bhimjee
 
- ![Portfolio](images/portfolioPreview.png)
+ ![preview of Mohammed's portfolio](images/)
